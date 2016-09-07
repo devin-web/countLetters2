@@ -26,7 +26,7 @@ else{
 function countLetters( curString ){
   curString = curString.split("");
   var myObj = {};
-  for( char in curString ){
+  for( var char = 0; char < curString.length; char++ ){
     if( curString[char] !== " " ){
       if( myObj.hasOwnProperty( curString[char] ) ){
         myObj[curString[char]].count++;
